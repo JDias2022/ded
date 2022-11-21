@@ -1,0 +1,50 @@
+body {
+    background:rgb(248, 248, 248);
+}
+aside {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex;
+}
+#menu-opener {
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-right:10px;
+    z-index: 999;
+}
+#menu-area {
+    width:200px;
+    height:100vh;
+    background:rgb(164, 182, 165);
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+    position: absolute;
+    padding-top: 45px;
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+    font-style: italic;
+}
+#menu-area li:hover {
+    background:#DDD;
+}
+
+.menu-opened  {
+    right: 0px; 
+}
+
+.menu-closed {
+    right: -800px;
+}

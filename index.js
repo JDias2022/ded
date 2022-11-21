@@ -1,11 +1,11 @@
-function menuToggle () {
+function menuToggle () {  
 let menuArea = document.getElementById("menu-area");
 
-if(menuArea.style.widith ==- '200px') {
-    menuArea.style.width = '0px'; }
-    else {
-        menuArea.style.width = '200px';
-    }
+if(menuArea.classList.contains('menu-opened') == true ) { 
+    menuArea.classList.remove('menu-opened');
+    menuArea.classList.add('menu-closed')
+} else {
+    menuArea.classList.remove('menu-closed')
+    menuArea.classList.add('menu-opened')
 }
-
-
+}
