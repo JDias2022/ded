@@ -1,5 +1,5 @@
 body {
-    background:rgb(254, 254, 254);
+    background:rgb(255, 255, 255);
     margin: 0;
 }
 header .line {
@@ -10,22 +10,33 @@ img {
     max-width:100%;
     height:auto;   
     }
+
 .header-area {
 height: auto;
 width: auto;
+text-align: center;
+background-color: #34db9e;
 }
 
 #titulo {
 font-style: italic;
-font-size: 30px;
+font-size: xx-large;
 text-align: center;
 margin-top: -3px;
 margin-bottom: -1px;
 background-color: #34db9e;
 border-radius: 1px;
-
 }
 
+.container-button {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 70px 70px;
+    justify-content: stretch;
+    margin-top: -1px;
+    margin-bottom: -1px;
+ }
+ 
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -46,8 +57,8 @@ border-radius: 1px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1;
-    margin: 20px;
-    padding: 1.2em 2.8em;
+    margin: 5px;
+    padding: 1.2em 1.4em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -62,12 +73,19 @@ border-radius: 1px;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
   }
+
   .third:hover {
     box-shadow: 0 0 10px 0 #34db9e inset, 0 0 10px 4px #34db9e;
   }
-  .container-button {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 70px 70px;
-    justify-content: stretch;
-    }
+  
+  .containertexto {
+    margin: 15px;
+    image-resolution: auto;
+    text-align: justify;
+  }
+  p {
+    text-align: center;
+    font-size: large;
+    border: 2px solid #34db9e;
+    border-radius: 0.6em;
+  }
