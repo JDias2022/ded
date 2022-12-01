@@ -1,4 +1,5 @@
 function menuToggle () {  
+    console.log("clicouu")
 let menuArea = document.getElementById("menu-area");
 
 if(menuArea.classList.contains('menu-opened') == true ) { 
