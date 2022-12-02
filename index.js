@@ -10,3 +10,4 @@ if(menuArea.classList.contains('menu-opened') == true ) {
     menuArea.classList.add('menu-opened')
 }
 }
+
